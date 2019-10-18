@@ -1,0 +1,12 @@
+package com.beans;
+
+public class BasketCoach implements Coach {
+
+	private String name;
+	private String email;
+	
+	public String getWorkout() {
+		return "Throw 100 times.";
+	}
+
+}

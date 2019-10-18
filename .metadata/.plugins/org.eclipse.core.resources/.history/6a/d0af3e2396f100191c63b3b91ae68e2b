@@ -1,0 +1,23 @@
+package com.beans;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ScopesSpringApp {
+
+	public static void main(String[] args) {
+		
+		try(ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext("scopes-applicationContext.xml"))
+		{
+		
+			Coach myBean = appContext.getBean("myBasketballCoach", Coach.class);
+			
+			System.out.println(myBean.getWorkout());
+			System.out.println("Name: "+myBean.getName());
+			System.out.println("Email: "+myBean.getEmail());
+			
+		} catch (Exception e) {
+			System.out.println("Exception: "+e.getStackTrace());
+		}
+	}
+
+}
