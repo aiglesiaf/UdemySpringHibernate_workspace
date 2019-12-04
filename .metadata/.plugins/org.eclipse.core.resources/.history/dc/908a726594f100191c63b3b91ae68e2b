@@ -1,9 +1,0 @@
-package com.beans;
-
-public class BasketCoach implements Coach {
-
-	public String getWorkout() {
-		return "Train for 5 min";
-	}
-
-}

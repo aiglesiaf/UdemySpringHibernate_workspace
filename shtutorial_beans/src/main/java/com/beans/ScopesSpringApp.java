@@ -22,6 +22,8 @@ public class ScopesSpringApp {
 			System.out.println("Email2: "+myBean2.getEmail());
 			System.out.println("Object2: "+myBean2.toString());
 			
+			System.out.println("Remember that prototype does not call destroy method!!!");
+			
 		} catch (Exception e) {
 			System.out.println("Exception: "+e.getStackTrace());
 		}

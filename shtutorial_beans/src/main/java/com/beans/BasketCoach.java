@@ -7,12 +7,12 @@ public class BasketCoach implements Coach {
 	
 	public BasketCoach(String name) {
 		super();
-		System.out.println("Constructing BasketCoach Bean.");
+		System.out.println("1. Constructing BasketCoach Bean.");
 		this.name = name;
 	}
 	
 	public void init() {
-		System.out.println("My customed bean initialization.");
+		System.out.println("3. My customed bean initialization.");
 	}
 
 	public void cleanUp() {
@@ -28,7 +28,7 @@ public class BasketCoach implements Coach {
 	}
 
 	public void setEmail(String email) {
-		System.out.println("Setting property email.");
+		System.out.println("2. Setting property email.");
 		this.email = email;
 	}
 
